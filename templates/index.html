@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CUCEK Hostels</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!--modal resources-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="{% static 'assets/js/modal.js' %}"></script>
+  <link href="{% static 'assets/css/modal.css' %}" rel="stylesheet">
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- cards styles -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.jpg' %}">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/cards.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/animations.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <h1><a href="{% url 'hostels' %}">Hostels</a></h1>
+        <!-- <a href="index.html"><img src="{% static 'assets/img/logo.png' %}" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+          <li><a class="nav-link scrollto active" href="{% url 'hostels' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'gents' %}">Gents</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'ladies' %}">Ladies</a></li>
+
+        </ul>
+
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!-- ======= Hero Section ======= -->
+
+  <!-- End Hero Section -->
+
+  {% block body_block %}
+
+
+
+
+  {% endblock %}
+
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row"> -->
+
+  <!-- <div class="col-lg-4 col-md-6 footer-info">
+            <h3>NewBiz</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
+              darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo.
+              Amet volutpat consequat mauris nunc congue.</p>
+          </div> -->
+
+  <!-- <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div> -->
+
+  <!-- <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4> -->
+  <!-- <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p> -->
+
+  <!-- <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div> -->
+
+  <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore
+              legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div> -->
+
+  <!-- </div>
+      </div>
+    </div> -->
+
+  <!-- <div class="container"> -->
+  <!-- <div class="copyright">
+        &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
+      </div> -->
+  <!-- <div class="credits"> -->
+  <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+      -->
+  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+  <!-- </div>
+  </div>
+  </footer> -->
+  <!-- <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+
+  </footer> -->
+
+  <!-- End Footer -->
+
+
+
+  <!-- Vendor JS Files -->
+  <!--<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script> <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script><script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src='https://rawgithub.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js'></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script src="{% static 'assets/js/animations.js' %}"></script>
+
+</body>
+
+</html>

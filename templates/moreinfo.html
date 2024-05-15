@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% load static %}
+{% block body_block %}
+<div class="mt-5 container">
+    <div class="row">
+        <h1>more info</h1>
+        {% for i in moreinfo %}
+
+        <h5>{{i.hostel_name}}</h5>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

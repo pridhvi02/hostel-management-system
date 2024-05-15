@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% load static %}
+
+{% block body_block %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="clearfix">
+    <div class="mt-5  container" data-aos="fade-up">
+
+        <!-- <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'assets/img/hostel.jpg' %}" alt="" class="img-fluid">
+        </div> -->
+
+        <div class="container-fluid hero-info" data-aos="zoom-in" data-aos-delay="100">
+            <h2>Find your<br><span>Right</span><br>Hostel</h2>
+            <div>
+                <a href="{% url 'gents' %}" class="btn-get-started scrollto">Gents hostels</a>
+                <a href="{% url 'ladies' %}" class="btn-services scrollto">Ladies hostels</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
